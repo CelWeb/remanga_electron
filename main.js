@@ -5,10 +5,12 @@ let win;
 function createWindow () {
   // Создаем окно браузера.
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 300,
+    height: 800,
+    title: "Remanga reader",
+    autoHideMenuBar: true,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
     }
   })
 

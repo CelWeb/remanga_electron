@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Search manga</title>
+  <title>Remanga reader</title>
   <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -37,10 +37,10 @@
   <nav class="navbar navbar-light bg-light">
     <div class="form-inline mx-auto">
       <a class="navbar-brand" href="#">Manga search</a>
-      <a id="back-button" hidden="true" class="pagination page-item page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
       <input class="form-control mr-sm-2" type="search" id="search-place" placeholder="Search" aria-label="Search">
+        <a id="back-button" hidden="true" class="pagination page-item page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
       <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">Search</button>
       <button class="btn btn-outline-info" onclick="alert(help)">Help</button>
     </div>

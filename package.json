@@ -7,9 +7,11 @@
     "run": "electron .",
     "start": "node main.js",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "sign": "electron-builder create-self-signed-cert -p iHackFX",
+    "windows-dist": "electron-builder -w"
   },
-  "author": "",
+  "author": "iHackFX",
   "license": "ISC",
   "devDependencies": {
     "electron": "^10.0.0",

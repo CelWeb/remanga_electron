@@ -107,9 +107,7 @@ function get_tomes(ins) {
     resp.on('end', () => {
       wait_data = JSON.parse(data).content
       clear_SearchData();
-      
       add("tome", wait_data.reverse())
-      console.log(wait_data)
       document.getElementById("manga-id").dataset.manga_id = ins
     });
   })
