@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Search manga</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    body{
+      background-color: #a3a3a3;
+    }
+    .center{
+      text-align: center;
+      align-content: center;
+      align-self: center;
+      align-items: center;
+    }
+    .jumbotron{
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    .btn{
+      margin-right: 8px;
+      white-space: normal;
+    }
+    .btn-primary{
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="form-inline mx-auto">
+      <a class="navbar-brand" href="#">Manga search</a>
+      <a id="back-button" hidden="true" class="pagination page-item page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+      <input class="form-control mr-sm-2" type="search" id="search-place" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">Search</button>
+      <button class="btn btn-outline-info" onclick="alert(help)">Help</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron center">
+      <div id="search-result">
+        <h1>Search russian manga without ads and slow performance</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div hidden="true" id="manga-id"></div>
+
+</body>
+<script>
+  // require('./renderer.js');
+</script>
+</html>
